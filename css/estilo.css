@@ -1,0 +1,231 @@
+
+/* * */
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* body */
+body{
+display: grid;
+justify-content: center;
+position: relative;
+}
+
+
+/* contenedor */
+.container{
+	max-width: 1000px;
+	min-height: calc(100vh - 68px) ;
+	position: relative;
+	padding: 0 20px;
+	width: 1000px;
+	background: #fff;
+}
+
+/* header */
+
+header{
+	border-top: 3px solid red;
+	border-bottom: 3px solid green;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+}
+
+nav{
+	padding: 20px 0 ;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu a {
+	padding: 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease-in-out all;
+	font-size: 1em;
+	color: #333;
+}
+
+.menu a:hover {
+	background: #333;
+	color: #fff;
+}
+
+/* footer */
+
+footer{
+
+	border-top: 3px solid red;
+	border-bottom: 3px solid green;
+    text-align: center;
+    background: #000;
+    color: #fff;
+	border-radius: 5px;
+}
+
+/* home */
+.hcontent .main { grid-area: main; }
+.hcontent .catalog { grid-area: catalog; }
+.hcontent .salsa_1 { grid-area: salsa_1; }
+.hcontent .salsa_2 { grid-area: salsa_2; }
+
+.hcontent{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	'main main catalog'
+	'salsa_1 salsa_2 catalog';
+	gap: 30px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+.hcontent .main h2{
+	text-align: center;
+}
+
+.hcontent .catalog{
+	margin-top: 5px;
+	background: rgba(0,0,0,.3);
+	padding: 0 10px;
+	border-radius: 10px;
+}
+
+.hcontent .salsa_1{
+	background: rgba(255,0,0,.05);
+}
+
+.hcontent .salsa_1, .salsa_2{
+	border: 1px solid red;
+	border-radius: 10px;
+	box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+}
+
+.hcontent .salsa_1 h3, .salsa_2 h3{
+	text-align: center;
+}
+
+.hcontent .salsa_1 ul, .salsa_2 ul{
+	margin-left: 40px;
+}
+
+.hcontent .salsa_2{
+	border: 1px solid green;
+	background: rgba(0,128,0,.05);
+}
+
+/* Recetas*/
+
+.bg{
+	background: url("../page/img/pastasFondo.png");
+	background-size: cover;
+	opacity: 0.3;
+	position: absolute;
+	left: 0;
+	top: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.gcontent .gallery{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 20px;
+padding: 5px;
+}
+
+.gcontent .gallery .grid_item{
+
+	border: 1px solid red;
+	border-radius: 10px;
+    padding: 10px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+
+}
+.gcontent .gallery .grid_item img{
+	width: 100%;
+}
+
+div ul li {
+list-style: none;
+}
+/* registro */
+
+
+.titleText{
+	color: #111111;
+	font-size: 2em;  
+	font-weight: 300;
+  }
+  
+  .titleText span{
+	  color: #ff0000;
+	  font-weight: 700;
+	  font-size: 1.5em;
+  }
+.contactForm {
+    padding: 75px 50px;
+    background: #ffffff;
+    box-shadow: 0  15px 50px rgba(0,0,0,0.1);
+}
+
+.contactForm h3{
+    color: #111111;
+    font-size: 1.2em   ;
+    margin-bottom: 20px;
+    font-weight: 500px;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact .inputBox input,
+.contact .inputBox textarea{
+    width: 100%;
+    border:solid 1px #555;
+    padding: 10px;
+    color: #111111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contact .inputBox input[type="submit"]{
+   font-size: 1em;
+   color: #ffffff;
+   background: #ff0000;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .5s;
+    max-width: 100px;
+    font-weight: 500;
+    border:none;
+    cursor: pointer;
+}
+
+
+/* About Us */
+
+.acontent{
+	text-align: justify;
+}
+
+.acontent h2{
+	text-align: center;
+}
