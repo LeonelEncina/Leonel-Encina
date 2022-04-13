@@ -23,24 +23,31 @@
         </header>
         <section class="contact" id="contact">
             <div class="title">
-                <h2 class="titleText"><span>C</span>ontáctanos</h2>
-                <p>Tus comentarios son importantes para nosotros.</p>
+                <h2 class="titleText"><span>R</span>esgistrate</h2>
+                <p  class="parrafo">Tus comentarios son importantes para nosotros.</p>
             </div>
-            <form >
-                <div class="contactForm">
-                    <h3>Enviar Mensaje</h3>
-                    <div class="inputBox">
-                        <input type="text" placeholder="Nombre">
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" placeholder="Email">
-                    </div>
-                    <div class="inputBox">
-                        <textarea placeholder="comentarios"></textarea>
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" value="Enviar">
-                    </div>
+            <form class="form ">
+                <h2 class="form-title" >Registrate</h2>
+                <p class="form-paragraph"> ¿Aun no te Registraste? <a href="#" class="from-link">Sumate a la comunidad</a></p>
+        
+                <div class="form-container">
+                    <div class="form-group">
+                    <input type="text" id="name" class="form-input" placeholder=" ">
+                    <label for="name" class="form-label" >Nombre:</label>
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="user" class="form-input" placeholder=" ">
+                    <label for="user" class="form-label" >Usuario:</label>
+                    <span class="form-line"></span>
+                   </div>
+                   <div class="form-group">
+                    <input type="text" id="password" class="form-input" placeholder=" ">
+                    <label for="password" class="form-label" >Contraseña:</label>
+                    <span class="form-line"></span>
+                   </div>
+                   
+                   <input type="submit" class="form-submit" value="enviar" >
                 </div>
             </form>
         </section>
